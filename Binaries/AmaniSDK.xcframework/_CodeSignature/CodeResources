@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AmaniSDK.framework/AmaniSDK</key>
 		<data>
-		wf5mGtjndKdc9XLFJMYJw73HKWQ=
+		mUkHE90TlqGFUe59fygPYCk85jw=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Assets.car</key>
 		<data>
@@ -34,15 +34,15 @@
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Info.plist</key>
 		<data>
-		zD3l42EnWfgpwRwdUijVJHmcnds=
+		1QReKmFEcMnI6f1zL1MghfTKfnQ=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		P8uGSuVQ6kp002PWlEY75ngwxuw=
+		ndUBuoJHDOCqzBmuKoErv6+U60I=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		UCPOYbe2im6YqBV4ZhwE9HRTby8=
+		eEB72DaI1fN+eCCNMsRj9RADKaI=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UCPOYbe2im6YqBV4ZhwE9HRTby8=
+		eEB72DaI1fN+eCCNMsRj9RADKaI=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/holo.mlmodelc/coremldata.bin</key>
 		<data>
-		A6RZ5BdYhxm2YbnJQsd6M724hWc=
+		FZwhDdGnGNNQQpMiQYWv3TSPxT4=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/holo.mlmodelc/metadata.json</key>
 		<data>
-		nfXGaYRfIJUR9uwKgiOT7P5Ygrs=
+		huawHKLTauRgJfdYT1uvzBUGfz4=
 		</data>
 		<key>ios-arm64/AmaniSDK.framework/holo.mlmodelc/model0/analytics/coremldata.bin</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/AmaniSDK</key>
 		<data>
-		iDg4yP6xTahCLqK7/pRRA5WfnIA=
+		RTy+y07aJhvM9zQf5zkGF/WtGmQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Assets.car</key>
 		<data>
@@ -154,15 +154,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Info.plist</key>
 		<data>
-		Xc1taESzYO+bBFyesx/fOhD9iFE=
+		54eUUkjsiWdGwv5kWp8DKV1ZOjo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iT7wZeRw5pGGPzWqzNIHqR9qYSw=
+		vq4xiGPdDNCy5s0zGSMW0htjyAk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dnliUSRhCnXuC3QTmCnF85Cme58=
+		KI9OUAr0FodcEE24noB5oDbSpsc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -170,15 +170,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dnliUSRhCnXuC3QTmCnF85Cme58=
+		KI9OUAr0FodcEE24noB5oDbSpsc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		iT7wZeRw5pGGPzWqzNIHqR9qYSw=
+		vq4xiGPdDNCy5s0zGSMW0htjyAk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		76H9tftxFlOqJSRtqAAK0ILKY6w=
+		5kmZMbuHG7AO2UAKZZM4b5aRFyg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		76H9tftxFlOqJSRtqAAK0ILKY6w=
+		5kmZMbuHG7AO2UAKZZM4b5aRFyg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		a26ZNFrmtMVaI8V5eBOOWxjpgms=
+		e70Zu42lfGZJ4+c6wxchQSfxMjU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/holo.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/holo.mlmodelc/model0/coremldata.bin</key>
 		<data>
-		m0W2aUMI7mLNtXC8uxXBtW4qR6c=
+		AKRj1uBRCDMgugiYbeSq/1g9g3M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/holo.mlmodelc/model0/model.espresso.net</key>
 		<data>
@@ -271,11 +271,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wf5mGtjndKdc9XLFJMYJw73HKWQ=
+			mUkHE90TlqGFUe59fygPYCk85jw=
 			</data>
 			<key>hash2</key>
 			<data>
-			UDCGuslxWYyJ2ka4/64SPxvx298GvfgTimj++6Cns0s=
+			atI19tKirLS1VUfKQrCI8ebl7c7QlqlHdY0lQ4neBfc=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/Assets.car</key>
@@ -348,33 +348,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zD3l42EnWfgpwRwdUijVJHmcnds=
+			1QReKmFEcMnI6f1zL1MghfTKfnQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			enyeFB35rd2Ki5yIwHl2kcVIIU4c7yTHu6gr38rzj7A=
+			dOEdilCPs1nmAkcqKj0WFBXvK2LD8jr0IZ1gEtRNfcw=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P8uGSuVQ6kp002PWlEY75ngwxuw=
+			ndUBuoJHDOCqzBmuKoErv6+U60I=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Vyx0q6Sq72yks0LtwzsS8vY+MLX/h53deg2eBi/y5I=
+			xGFkIqqpBL/rbIfso0Uxlx3rFweK9cwyLaM8LB3nrLk=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UCPOYbe2im6YqBV4ZhwE9HRTby8=
+			eEB72DaI1fN+eCCNMsRj9RADKaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			I1jNRG7uzM2IwxKpTHJqVirp6M7MtjJG8JIlCCDz3sg=
+			4JAbKxRbrIPbOjxaC9VdGZp660a8zdiNMlf1p8wc1BQ=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -392,11 +392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UCPOYbe2im6YqBV4ZhwE9HRTby8=
+			eEB72DaI1fN+eCCNMsRj9RADKaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			I1jNRG7uzM2IwxKpTHJqVirp6M7MtjJG8JIlCCDz3sg=
+			4JAbKxRbrIPbOjxaC9VdGZp660a8zdiNMlf1p8wc1BQ=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/Modules/module.modulemap</key>
@@ -491,22 +491,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A6RZ5BdYhxm2YbnJQsd6M724hWc=
+			FZwhDdGnGNNQQpMiQYWv3TSPxT4=
 			</data>
 			<key>hash2</key>
 			<data>
-			yhb3GPGNa2Hqh2C0FAnpVEqMEdNzkJo+HCnbjJnQnzc=
+			hPMyr1O+zo7aASbKPUfGGiHkfd696fgOfNsypxOgcGU=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/holo.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nfXGaYRfIJUR9uwKgiOT7P5Ygrs=
+			huawHKLTauRgJfdYT1uvzBUGfz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			vJbxou7SaL6GMbqOmlS0Rz96+zEvPKaLCs3GsbP42ZI=
+			1WiSI4uRT8Z669EEx2rwJJcypuWwWOx3c1nkBSrjff8=
 			</data>
 		</dict>
 		<key>ios-arm64/AmaniSDK.framework/holo.mlmodelc/model0/analytics/coremldata.bin</key>
@@ -601,11 +601,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iDg4yP6xTahCLqK7/pRRA5WfnIA=
+			RTy+y07aJhvM9zQf5zkGF/WtGmQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vh679MXjz8ctMuoW2ABN+4d3U529Fu0ccM+tmG+o7SQ=
+			3IkFazb6HWZytscXkL7ZGi7tfEy0MK4+XkAX/Qt9wUU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Assets.car</key>
@@ -678,33 +678,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xc1taESzYO+bBFyesx/fOhD9iFE=
+			54eUUkjsiWdGwv5kWp8DKV1ZOjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			AAXLF5HJmelZv/yF9Z/ogRL6npRSw403gQrWXnzvEeQ=
+			xgW6ucmzCGD96Dp18519PQ3GmBVsjvInCp5zvt7qH2o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iT7wZeRw5pGGPzWqzNIHqR9qYSw=
+			vq4xiGPdDNCy5s0zGSMW0htjyAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			hn7TYY5XdNeRENFiG5lcuiObvTmrvOJ9RtoQDxNOC7g=
+			4zS6FERya1XK1zP+7wflcsMpznCViRmQ4ZTVutbe3nA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dnliUSRhCnXuC3QTmCnF85Cme58=
+			KI9OUAr0FodcEE24noB5oDbSpsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			NhPT83jlNV2i0sDwJRiD2Fvcm2zFMxkzZgWDMZ60p4k=
+			Lk+TQoPWtq26UKgzvt/RIsDdzRvKUeYLomxa+Vdgkb8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -722,33 +722,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dnliUSRhCnXuC3QTmCnF85Cme58=
+			KI9OUAr0FodcEE24noB5oDbSpsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			NhPT83jlNV2i0sDwJRiD2Fvcm2zFMxkzZgWDMZ60p4k=
+			Lk+TQoPWtq26UKgzvt/RIsDdzRvKUeYLomxa+Vdgkb8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iT7wZeRw5pGGPzWqzNIHqR9qYSw=
+			vq4xiGPdDNCy5s0zGSMW0htjyAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			hn7TYY5XdNeRENFiG5lcuiObvTmrvOJ9RtoQDxNOC7g=
+			4zS6FERya1XK1zP+7wflcsMpznCViRmQ4ZTVutbe3nA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			76H9tftxFlOqJSRtqAAK0ILKY6w=
+			5kmZMbuHG7AO2UAKZZM4b5aRFyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GpMeL5FUqPSPhNvlFT6BM+4puJsMfI+bQuP9HyEyfDA=
+			GI234W05s5j9xM1O6mQ98DghBD1T2BzAb+JQjlWSF4o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/AmaniSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -766,11 +766,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			76H9tftxFlOqJSRtqAAK0ILKY6w=
+			5kmZMbuHG7AO2UAKZZM4b5aRFyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GpMeL5FUqPSPhNvlFT6BM+4puJsMfI+bQuP9HyEyfDA=
+			GI234W05s5j9xM1O6mQ98DghBD1T2BzAb+JQjlWSF4o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/Modules/module.modulemap</key>
@@ -854,11 +854,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a26ZNFrmtMVaI8V5eBOOWxjpgms=
+			e70Zu42lfGZJ4+c6wxchQSfxMjU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ekcViTjeUWkEB6dXQCJOY6govsY5IEHX4hOTB23KrZk=
+			Dk0UlYOAWnCGXPKrHbZGyqkJ3wLYfG1AzQkQOz00wsE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/holo.mlmodelc/analytics/coremldata.bin</key>
@@ -909,11 +909,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m0W2aUMI7mLNtXC8uxXBtW4qR6c=
+			AKRj1uBRCDMgugiYbeSq/1g9g3M=
 			</data>
 			<key>hash2</key>
 			<data>
-			ekqQ1o71DRmkLbARNMq07Umw5RdIELVvolDR9z/cOAk=
+			2xHNV4tdiwJG1th4YsuAdGYJP2p8UMCtc//TB1CqvLI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AmaniSDK.framework/holo.mlmodelc/model0/model.espresso.net</key>

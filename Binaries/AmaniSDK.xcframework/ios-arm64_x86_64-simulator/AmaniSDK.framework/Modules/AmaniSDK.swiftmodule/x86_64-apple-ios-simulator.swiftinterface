@@ -110,6 +110,7 @@ public struct GeneralConfig : Swift.Codable {
   public var uploadPdf: Swift.String?
   public var clearText: Swift.String?
   public var ttsVoices: Swift.String?
+  public var isContinueVideoSDK: Swift.Bool?
   public var emailOTPEnabled: Swift.Bool?
   public var phoneOTPEnabled: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
@@ -477,7 +478,7 @@ public struct DocumentStepModel : Swift.Codable {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SignDocument {
-  public func generateHMACSignature(SharedSecret: Swift.String, RequestMethod: Swift.String, RequestPath: Swift.String, RequestBody: Swift.String, algorithm: AmaniSDK.SignDocument.HMACAlgo = .SHA256) -> Swift.String
+  public func generateHMACSignature(SharedSecret: Swift.String, RequestMethod: Swift.String, RequestPath: Swift.String, RequestBody: Foundation.Data, timestamp: Swift.String, algorithm: AmaniSDK.SignDocument.HMACAlgo = .SHA256) -> Swift.String
   public enum HMACAlgo {
     case MD5, SHA1, SHA224, SHA256, SHA384, SHA512
     public static func == (a: AmaniSDK.SignDocument.HMACAlgo, b: AmaniSDK.SignDocument.HMACAlgo) -> Swift.Bool

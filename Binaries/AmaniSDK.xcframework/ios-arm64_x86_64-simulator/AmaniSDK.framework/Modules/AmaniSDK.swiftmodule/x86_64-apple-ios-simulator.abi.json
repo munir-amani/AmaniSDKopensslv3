@@ -6771,6 +6771,116 @@
           },
           {
             "kind": "Var",
+            "name": "isContinueVideoSDK",
+            "printedName": "isContinueVideoSDK",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvp",
+            "mangledName": "$s8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvg",
+                "mangledName": "$s8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvs",
+                "mangledName": "$s8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvM",
+                "mangledName": "$s8AmaniSDK13GeneralConfigV015isContinueVideoB0SbSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "emailOTPEnabled",
             "printedName": "emailOTPEnabled",
             "children": [
@@ -20685,7 +20795,7 @@
           {
             "kind": "Function",
             "name": "generateHMACSignature",
-            "printedName": "generateHMACSignature(SharedSecret:RequestMethod:RequestPath:RequestBody:algorithm:)",
+            "printedName": "generateHMACSignature(SharedSecret:RequestMethod:RequestPath:RequestBody:timestamp:algorithm:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20713,6 +20823,12 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -20726,8 +20842,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AmaniSDK12SignDocumentC21generateHMACSignature12SharedSecret13RequestMethod0I4Path0I4Body9algorithmS2S_S3SAC8HMACAlgoOtF",
-            "mangledName": "$s8AmaniSDK12SignDocumentC21generateHMACSignature12SharedSecret13RequestMethod0I4Path0I4Body9algorithmS2S_S3SAC8HMACAlgoOtF",
+            "usr": "s:8AmaniSDK12SignDocumentC21generateHMACSignature12SharedSecret13RequestMethod0I4Path0I4Body9timestamp9algorithmS2S_S2S10Foundation4DataVSSAC8HMACAlgoOtF",
+            "mangledName": "$s8AmaniSDK12SignDocumentC21generateHMACSignature12SharedSecret13RequestMethod0I4Path0I4Body9timestamp9algorithmS2S_S2S10Foundation4DataVSSAC8HMACAlgoOtF",
             "moduleName": "AmaniSDK",
             "declAttributes": [
               "AccessControl"
@@ -82997,98 +83113,98 @@
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2278,
+      "offset": 2282,
       "length": 64,
       "value": "\"Fotoğrafını çektiğiniz kimliği okuttuğunuzdan emin olun\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2400,
+      "offset": 2404,
       "length": 39,
       "value": "\"Okuma işlemi başarıyla tamamlandı\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2483,
+      "offset": 2487,
       "length": 14,
       "value": "\"Hata Oluştu\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2543,
+      "offset": 2547,
       "length": 20,
       "value": "\"Bağlantı hatası\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2613,
+      "offset": 2617,
       "length": 30,
       "value": "\"Birden fazla kart okutulamaz\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2685,
+      "offset": 2689,
       "length": 16,
       "value": "\"Geçersiz kart\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2754,
+      "offset": 2758,
       "length": 37,
       "value": "\"Nfc okunurken birşeyler ters gitti\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2842,
+      "offset": 2846,
       "length": 25,
       "value": "\"onScreenButtonTextColor\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3023,
+      "offset": 3070,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3069,
+      "offset": 3116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3857,
+      "offset": 3904,
       "length": 17,
       "value": "\"buttonRadiusIOS\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4487,
+      "offset": 4534,
       "length": 19,
       "value": "\"email_otp_enabled\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4538,
+      "offset": 4585,
       "length": 19,
       "value": "\"phone_otp_enabled\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/AppConfigs\/GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4583,
+      "offset": 4630,
       "length": 15,
       "value": "\"ttsVoices_ios\""
     },
@@ -85293,14 +85409,14 @@
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV1\/AppConfigs\/ApiV1_GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3376,
+      "offset": 3415,
       "length": 17,
       "value": "\"buttonRadiusIOS\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV1\/AppConfigs\/ApiV1_GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3998,
+      "offset": 4039,
       "length": 15,
       "value": "\"ttsVoices_ios\""
     },
@@ -89290,91 +89406,91 @@
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9524,
+      "offset": 9529,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9683,
+      "offset": 9688,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 12676,
+      "offset": 12681,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 12688,
+      "offset": 12693,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13436,
+      "offset": 13441,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13539,
+      "offset": 13544,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13569,
+      "offset": 13574,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13687,
+      "offset": 13692,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13729,
+      "offset": 13734,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13733,
+      "offset": 13738,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 27418,
+      "offset": 33771,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "FloatLiteral",
-      "offset": 31371,
+      "offset": 37724,
       "length": 4,
       "value": "80.0"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/Controller\/IDCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31401,
+      "offset": 37754,
       "length": 2,
       "value": "90"
     },
@@ -90739,42 +90855,42 @@
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/AppConfigs\/ApiV2_GeneralConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2729,
+      "offset": 2770,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/AppConfigs\/ApiV2_GeneralConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2775,
+      "offset": 2816,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/AppConfigs\/ApiV2_GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3484,
+      "offset": 3525,
       "length": 17,
       "value": "\"buttonRadiusIOS\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/AppConfigs\/ApiV2_GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4057,
+      "offset": 4098,
       "length": 19,
       "value": "\"email_otp_enabled\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/AppConfigs\/ApiV2_GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4105,
+      "offset": 4146,
       "length": 19,
       "value": "\"phone_otp_enabled\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/AppConfigs\/ApiV2_GeneralConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4147,
+      "offset": 4188,
       "length": 15,
       "value": "\"ttsVoices_ios\""
     },
@@ -91775,42 +91891,42 @@
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/IDCapture.swift",
       "kind": "StringLiteral",
-      "offset": 614,
+      "offset": 669,
       "length": 14,
       "value": "\"3_idCapture_\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/IDCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 657,
+      "offset": 712,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/IDCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 694,
+      "offset": 749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/IDCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 729,
+      "offset": 784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/IDCapture.swift",
       "kind": "StringLiteral",
-      "offset": 12452,
+      "offset": 12659,
       "length": 6,
       "value": "\"🟢\""
     },
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/IDCapture.swift",
       "kind": "StringLiteral",
-      "offset": 12486,
+      "offset": 12693,
       "length": 8,
       "value": "\"⚪️\""
     },
@@ -92643,7 +92759,7 @@
     {
       "filePath": "\/Users\/mketizmen\/Projects\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Controller\/PoseEstimationCaptureView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14197,
+      "offset": 14202,
       "length": 1,
       "value": "0"
     },
