@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AmaniSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AmaniSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import Accelerate
 import CommonCrypto
@@ -148,7 +148,6 @@ public struct HTTPMethod : Swift.RawRepresentable, Swift.Equatable, Swift.Hashab
   public func setSource(source: Swift.Int) -> AmaniSDK.BioLoginBuilder
   public func setComparisonAdaptere(comparison_adapter: Swift.Int) -> AmaniSDK.BioLoginBuilder
   public func setCustomer(customer_id: Swift.String) -> AmaniSDK.BioLoginBuilder
-  public func setAttemptId(attempt_id: Swift.String) -> AmaniSDK.BioLoginBuilder
   public func setUrl(url: Swift.String) -> AmaniSDK.BioLoginBuilder
   public func setPoseEstimationMessages(infoMessages: [AmaniSDK.poseState : Swift.String])
   public func setPoseEstimationColors(screenConfig: [AmaniSDK.poseConfigState : Swift.String])
@@ -237,6 +236,8 @@ extension AmaniSDK.Amani {
   final public func IdCapture() -> AmaniSDK.IDCapture
   @available(iOS 13, *)
   final public func scanNFC() -> AmaniSDK.ScanNFC
+  final public func bioLogin() -> AmaniSDK.BioLogin
+  final public func bioLoginBuilder() -> AmaniSDK.BioLoginBuilder
   final public func document() -> AmaniSDK.Document
   final public func signature() -> AmaniSDK.Signature
   final public func customerInfo() -> AmaniSDK.CustomerInfo
@@ -272,10 +273,10 @@ public struct ApiV1_AddressInfo : Swift.Codable {
   public func setPhone(phone: Swift.String)
   public func getCustomer() -> AmaniSDK.CustomerResponseModel
   public func getCustomer(forceUpdateCallback: ((_ success: AmaniSDK.CustomerResponseModel?) -> Swift.Void)?)
-  public func requestEmailOTPCode(result: @escaping ((Swift.Bool?) -> Swift.Void))
-  public func requestPhoneOTPCode(result: @escaping ((Swift.Bool?) -> Swift.Void))
-  public func submitEmailOTP(code: Swift.String, completion: @escaping ((Swift.Bool?) -> Swift.Void))
-  public func submitPhoneOTP(code: Swift.String, completion: @escaping ((Swift.Bool?) -> Swift.Void))
+  public func requestEmailOTPCode(result: @escaping (Swift.Bool?) -> Swift.Void)
+  public func requestPhoneOTPCode(result: @escaping (Swift.Bool?) -> Swift.Void)
+  public func submitEmailOTP(code: Swift.String, completion: @escaping (Swift.Bool?) -> Swift.Void)
+  public func submitPhoneOTP(code: Swift.String, completion: @escaping (Swift.Bool?) -> Swift.Void)
   public func upload(location: CoreLocation.CLLocation?, completion: @escaping (Swift.Bool?) -> Swift.Void)
   @objc deinit
 }
@@ -1015,7 +1016,7 @@ public struct DocumentVersion : Swift.Codable {
 @_hasMissingDesignatedInitializers public class BioLogin {
   public static let sharedInstance: AmaniSDK.BioLogin
   public func setType(type: Swift.String)
-  public func setParams(server: Swift.String, token: Swift.String, customer_id: Swift.String, source: Swift.Int = 3, comparison_adapter: Swift.Int = 2, attempt_id: Swift.String, biologintype: AmaniSDK.BioLoginType = .autoSelfie)
+  public func setParams(biologintype: AmaniSDK.BioLoginType = .autoSelfie)
   public func setPoseEstimationMessages(infoMessages: [AmaniSDK.poseState : Swift.String])
   public func setPoseEstimationColors(screenConfig: [AmaniSDK.poseConfigState : Swift.String])
   public func setPoseEstimationMainGuideImages(guideImages: [AmaniSDK.mainGuideImages : UIKit.UIImage])
@@ -1238,8 +1239,8 @@ public enum ProfileStatus : Swift.String, Swift.Codable {
   }
 }
 @_hasMissingDesignatedInitializers public class Signature {
-  public typealias VoidFnCallback = (() -> ())
-  public typealias OnConfirmPressed = ((UIKit.UIImage, Swift.Int) -> ())
+  public typealias VoidFnCallback = () -> ()
+  public typealias OnConfirmPressed = (UIKit.UIImage, Swift.Int) -> ()
   public static let sharedInstance: AmaniSDK.Signature
   public func getCountofSignatures() -> Swift.Int
   public func setViewArea(viewArea: CoreFoundation.CGRect)
@@ -1272,7 +1273,7 @@ public struct ApiV2_CustomerRequestModel : Swift.Codable {
 @_hasMissingDesignatedInitializers public class Questionnaire {
   public static let sharedInstance: AmaniSDK.Questionnaire
   public func getQuestions(completion: @escaping ([AmaniSDK.QuestionModel]) -> Swift.Void)
-  public func submitAnswers(answers: [AmaniSDK.QuestionAnswerRequestModel], completion: @escaping ((Swift.Bool) -> Swift.Void))
+  public func submitAnswers(answers: [AmaniSDK.QuestionAnswerRequestModel], completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 @available(iOS 13, macOS 10.15, *)
@@ -1570,7 +1571,7 @@ public class PoseEstimation {
   @discardableResult
   public func setOnFailedAttemptCallback(callback: @escaping (Swift.Int) -> Swift.Void) -> AmaniSDK.PoseEstimation
   public func start(stepId: Swift.Int = steps.front.rawValue, completion: @escaping (UIKit.UIImage) -> Swift.Void) throws -> UIKit.UIView?
-  public func upload(location: CoreLocation.CLLocation? = nil, completion: @escaping ((Swift.Bool?) -> Swift.Void))
+  public func upload(location: CoreLocation.CLLocation? = nil, completion: @escaping (Swift.Bool?) -> Swift.Void)
   @objc deinit
 }
 public enum PACEMappingType {
@@ -1751,7 +1752,7 @@ public class IDCapture {
   public func setClientSideMRZ(enabled: Swift.Bool) -> AmaniSDK.IDCapture
   public func start(stepId: Swift.Int = steps.front.rawValue, completion: @escaping (UIKit.UIImage) -> Swift.Void) throws -> UIKit.UIView?
   public func upload(location: CoreLocation.CLLocation? = nil, completion: @escaping (Swift.Bool?) -> Swift.Void)
-  public func getMrz(cb: @escaping ((Swift.String?) -> Swift.Void))
+  public func getMrz(cb: @escaping (Swift.String?) -> Swift.Void)
   @available(iOS 13, *)
   public func startNFC(nvi: AmaniSDK.NviModel) async -> Swift.Bool
   @available(iOS 13, *)

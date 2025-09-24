@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "AmaniSDK"
-  s.version      = "3.4.14"
+  s.version      = "3.4.17"
   s.summary      = "Amani-SDK"
   s.description  = "The Amani Software Development kit (SDK) provides you complete steps to perform eKYC."
   s.homepage     = "https://github.com/AmaniTechnologiesLtd/IOS_SDK_V2_Public"
