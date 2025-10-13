@@ -26,6 +26,140 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BioMatchPinResult",
+        "printedName": "BioMatchPinResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK17BioMatchPinResultV6statusSSSgvp",
+            "mangledName": "$s8AmaniSDK17BioMatchPinResultV6statusSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK17BioMatchPinResultV6statusSSSgvg",
+                "mangledName": "$s8AmaniSDK17BioMatchPinResultV6statusSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BioMatchPinResult",
+                "printedName": "AmaniSDK.BioMatchPinResult",
+                "usr": "s:8AmaniSDK17BioMatchPinResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AmaniSDK17BioMatchPinResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AmaniSDK17BioMatchPinResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AmaniSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AmaniSDK17BioMatchPinResultV",
+        "mangledName": "$s8AmaniSDK17BioMatchPinResultV",
+        "moduleName": "AmaniSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AmaniSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "NFCRequest",
         "printedName": "NFCRequest",
         "children": [
@@ -12853,6 +12987,116 @@
             "declKind": "Func",
             "usr": "s:8AmaniSDK12CustomerInfoC03getC0AA0C13ResponseModelVyF",
             "mangledName": "$s8AmaniSDK12CustomerInfoC03getC0AA0C13ResponseModelVyF",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enablePin",
+            "printedName": "enablePin(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<AmaniSDK.BioMatchPinResult, AmaniSDK.AmaniError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<AmaniSDK.BioMatchPinResult, AmaniSDK.AmaniError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BioMatchPinResult",
+                        "printedName": "AmaniSDK.BioMatchPinResult",
+                        "usr": "s:8AmaniSDK17BioMatchPinResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AmaniError",
+                        "printedName": "AmaniSDK.AmaniError",
+                        "usr": "s:8AmaniSDK0A5ErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AmaniSDK12CustomerInfoC9enablePin_10completionySS_ys6ResultOyAA08BioMatchfH0VAA0A5ErrorVGctF",
+            "mangledName": "$s8AmaniSDK12CustomerInfoC9enablePin_10completionySS_ys6ResultOyAA08BioMatchfH0VAA0A5ErrorVGctF",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disablePin",
+            "printedName": "disablePin(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<AmaniSDK.BioMatchPinResult, AmaniSDK.AmaniError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<AmaniSDK.BioMatchPinResult, AmaniSDK.AmaniError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BioMatchPinResult",
+                        "printedName": "AmaniSDK.BioMatchPinResult",
+                        "usr": "s:8AmaniSDK17BioMatchPinResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AmaniError",
+                        "printedName": "AmaniSDK.AmaniError",
+                        "usr": "s:8AmaniSDK0A5ErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AmaniSDK12CustomerInfoC10disablePin10completionyys6ResultOyAA08BioMatchfH0VAA0A5ErrorVGc_tF",
+            "mangledName": "$s8AmaniSDK12CustomerInfoC10disablePin10completionyys6ResultOyAA08BioMatchfH0VAA0A5ErrorVGc_tF",
             "moduleName": "AmaniSDK",
             "declAttributes": [
               "AccessControl"
@@ -25867,6 +26111,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AmaniSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "StepConfig",
         "printedName": "StepConfig",
@@ -30822,6 +31076,117 @@
                 "declKind": "Accessor",
                 "usr": "s:8AmaniSDK27ApiV2_CustomerResponseModelV13phoneVerifiedSbSgvM",
                 "mangledName": "$s8AmaniSDK27ApiV2_CustomerResponseModelV13phoneVerifiedSbSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bioMatchEnabled",
+            "printedName": "bioMatchEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvp",
+            "mangledName": "$s8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvg",
+                "mangledName": "$s8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvs",
+                "mangledName": "$s8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvM",
+                "mangledName": "$s8AmaniSDK27ApiV2_CustomerResponseModelV15bioMatchEnabledSbSgvM",
                 "moduleName": "AmaniSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -51163,6 +51528,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AmaniSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ApiV2_MrzModel",
         "printedName": "ApiV2_MrzModel",
@@ -52526,6 +52901,2716 @@
         "name": "MrzModel",
         "printedName": "MrzModel",
         "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV5valueSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV5valueSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV5valueSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV5valueSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV5valueSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV5valueSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV5valueSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV5valueSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzFullName",
+            "printedName": "mrzFullName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV11mrzFullNameSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV11mrzFullNameSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzFullNameSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzFullNameSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzFullNameSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzFullNameSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzFullNameSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzFullNameSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzidNumber",
+            "printedName": "mrzidNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV11mrzidNumberSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV11mrzidNumberSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzidNumberSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzidNumberSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzidNumberSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzidNumberSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzidNumberSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzidNumberSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzDocumentNumber",
+            "printedName": "mrzDocumentNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV17mrzDocumentNumberSSvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV17mrzDocumentNumberSSvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV17mrzDocumentNumberSSvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV17mrzDocumentNumberSSvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV17mrzDocumentNumberSSvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV17mrzDocumentNumberSSvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV17mrzDocumentNumberSSvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV17mrzDocumentNumberSSvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzDocumentNumberCD",
+            "printedName": "mrzDocumentNumberCD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV19mrzDocumentNumberCDSSvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzBirthDate",
+            "printedName": "mrzBirthDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV12mrzBirthDateSSvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV12mrzBirthDateSSvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzBirthDateSSvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzBirthDateSSvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzBirthDateSSvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzBirthDateSSvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzBirthDateSSvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzBirthDateSSvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzBirthDateCD",
+            "printedName": "mrzBirthDateCD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV14mrzBirthDateCDSSvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV14mrzBirthDateCDSSvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzBirthDateCDSSvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzBirthDateCDSSvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzBirthDateCDSSvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzBirthDateCDSSvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzBirthDateCDSSvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzBirthDateCDSSvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzExpiryDate",
+            "printedName": "mrzExpiryDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV13mrzExpiryDateSSvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV13mrzExpiryDateSSvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13mrzExpiryDateSSvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV13mrzExpiryDateSSvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13mrzExpiryDateSSvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV13mrzExpiryDateSSvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13mrzExpiryDateSSvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV13mrzExpiryDateSSvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzExpiryDateCD",
+            "printedName": "mrzExpiryDateCD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV15mrzExpiryDateCDSSvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzidNumberCD",
+            "printedName": "mrzidNumberCD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV13mrzidNumberCDSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzFirstName",
+            "printedName": "mrzFirstName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV12mrzFirstNameSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV12mrzFirstNameSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzFirstNameSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzFirstNameSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzFirstNameSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzFirstNameSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzFirstNameSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzFirstNameSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzLastName",
+            "printedName": "mrzLastName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV11mrzLastNameSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV11mrzLastNameSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzLastNameSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzLastNameSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzLastNameSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzLastNameSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV11mrzLastNameSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV11mrzLastNameSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzSex",
+            "printedName": "mrzSex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV6mrzSexSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV6mrzSexSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV6mrzSexSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV6mrzSexSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV6mrzSexSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV6mrzSexSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV6mrzSexSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV6mrzSexSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzType",
+            "printedName": "mrzType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV7mrzTypeSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV7mrzTypeSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV7mrzTypeSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV7mrzTypeSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV7mrzTypeSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV7mrzTypeSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV7mrzTypeSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV7mrzTypeSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzCountryCode",
+            "printedName": "mrzCountryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzCountryCodeSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzNationality",
+            "printedName": "mrzNationality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV14mrzNationalitySSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV14mrzNationalitySSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzNationalitySSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzNationalitySSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzNationalitySSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzNationalitySSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV14mrzNationalitySSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV14mrzNationalitySSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzOptionalData",
+            "printedName": "mrzOptionalData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV15mrzOptionalDataSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrzOverallCD",
+            "printedName": "mrzOverallCD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV12mrzOverallCDSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV12mrzOverallCDSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzOverallCDSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzOverallCDSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzOverallCDSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzOverallCDSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12mrzOverallCDSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV12mrzOverallCDSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confidence",
+            "printedName": "confidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV10confidenceSiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV10confidenceSiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV10confidenceSiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV10confidenceSiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV10confidenceSiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV10confidenceSiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV10confidenceSiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV10confidenceSiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "x",
+            "printedName": "x",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV1xSiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV1xSiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1xSiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV1xSiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1xSiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV1xSiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1xSiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV1xSiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "y",
+            "printedName": "y",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV1ySiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV1ySiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1ySiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV1ySiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1ySiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV1ySiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1ySiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV1ySiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "w",
+            "printedName": "w",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV1wSiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV1wSiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1wSiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV1wSiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1wSiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV1wSiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1wSiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV1wSiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "h",
+            "printedName": "h",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV1hSiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV1hSiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1hSiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV1hSiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1hSiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV1hSiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV1hSiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV1hSiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roi",
+            "printedName": "roi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV3roiSSSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV3roiSSSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV3roiSSSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV3roiSSSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV3roiSSSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV3roiSSSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV3roiSSSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV3roiSSSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "letterHeight",
+            "printedName": "letterHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV12letterHeightSiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV12letterHeightSiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12letterHeightSiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV12letterHeightSiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12letterHeightSiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV12letterHeightSiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV12letterHeightSiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV12letterHeightSiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "letterSpacing",
+            "printedName": "letterSpacing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK8MrzModelV13letterSpacingSiSgvp",
+            "mangledName": "$s8AmaniSDK8MrzModelV13letterSpacingSiSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13letterSpacingSiSgvg",
+                "mangledName": "$s8AmaniSDK8MrzModelV13letterSpacingSiSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13letterSpacingSiSgvs",
+                "mangledName": "$s8AmaniSDK8MrzModelV13letterSpacingSiSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK8MrzModelV13letterSpacingSiSgvM",
+                "mangledName": "$s8AmaniSDK8MrzModelV13letterSpacingSiSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -56145,6 +59230,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AmaniSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -70583,6 +73678,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AmaniSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CardAccess",
         "printedName": "CardAccess",
@@ -76039,6 +79144,117 @@
                 "declKind": "Accessor",
                 "usr": "s:8AmaniSDK21CustomerResponseModelV13phoneVerifiedSbSgvM",
                 "mangledName": "$s8AmaniSDK21CustomerResponseModelV13phoneVerifiedSbSgvM",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bioMatchEnabled",
+            "printedName": "bioMatchEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvp",
+            "mangledName": "$s8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvp",
+            "moduleName": "AmaniSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvg",
+                "mangledName": "$s8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvg",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvs",
+                "mangledName": "$s8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvs",
+                "moduleName": "AmaniSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvM",
+                "mangledName": "$s8AmaniSDK21CustomerResponseModelV15bioMatchEnabledSbSgvM",
                 "moduleName": "AmaniSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -82807,17 +86023,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -82825,6 +86041,13 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/BioMatchModel\/BioMatchPinResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 318,
+      "length": 8,
+      "value": "\"status\""
+    },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/NFC\/Model\/NFCModel.swift",
       "kind": "StringLiteral",
@@ -82852,6 +86075,20 @@
       "offset": 290,
       "length": 2,
       "value": "15"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/Utilities\/ImageStabiltyCheck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 381,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/Utilities\/ImageStabiltyCheck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1889,
+      "length": 2,
+      "value": "20"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/IDCaptureModule\/AmaniMRZParser\/AmaniMRZFieldFormatter.swift",
@@ -83843,7 +87080,7 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/CustomerInfoModule\/CustomerInfo.swift",
       "kind": "StringLiteral",
-      "offset": 183,
+      "offset": 252,
       "length": 2,
       "value": "\"\""
     },
@@ -86279,58 +89516,65 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1472,
       "length": 16,
       "value": "\"id_card_number\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1506,
       "length": 8,
       "value": "\"access\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1477,
+      "offset": 1539,
       "length": 9,
       "value": "\"refresh\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 1570,
       "length": 12,
       "value": "\"company_id\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 1607,
       "length": 15,
       "value": "\"missing_rules\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1585,
+      "offset": 1647,
       "length": 15,
       "value": "\"reject_reason\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1626,
+      "offset": 1688,
       "length": 16,
       "value": "\"email_verified\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1668,
+      "offset": 1730,
       "length": 16,
       "value": "\"phone_verified\""
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ApiV2\/ApiV2_CustomerResponseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1774,
+      "length": 16,
+      "value": "\"biopay_enabled\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/NFC\/NFCPassportReader\/SecureMessaging.swift",
@@ -88883,133 +92127,133 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 766,
       "length": 13,
       "value": "\"MRZFullName\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 758,
+      "offset": 813,
       "length": 19,
       "value": "\"MRZDocumentNumber\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 813,
+      "offset": 868,
       "length": 21,
       "value": "\"MRZDocumentNumberCD\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 917,
       "length": 13,
       "value": "\"MRZIDNumber\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 904,
+      "offset": 959,
       "length": 14,
       "value": "\"MRZBirthDate\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 949,
+      "offset": 1004,
       "length": 16,
       "value": "\"MRZBirthDateCD\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 1050,
       "length": 15,
       "value": "\"MRZExpiryDate\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1097,
       "length": 17,
       "value": "\"MRZExpiryDateCD\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1144,
       "length": 15,
       "value": "\"MRZIDNumberCD\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1133,
+      "offset": 1188,
       "length": 14,
       "value": "\"MRZFirstName\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1175,
+      "offset": 1230,
       "length": 13,
       "value": "\"MRZLastName\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1211,
+      "offset": 1266,
       "length": 8,
       "value": "\"MRZSex\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1243,
+      "offset": 1298,
       "length": 9,
       "value": "\"MRZType\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1338,
       "length": 16,
       "value": "\"MRZCountryCode\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1330,
+      "offset": 1385,
       "length": 16,
       "value": "\"MRZNationality\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1378,
+      "offset": 1433,
       "length": 17,
       "value": "\"MRZOptionalData\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1479,
       "length": 14,
       "value": "\"MRZOverallCD\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 1563,
       "length": 15,
       "value": "\"letter_height\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/MrzModel.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1608,
       "length": 16,
       "value": "\"letter_spacing\""
     },
@@ -89569,7 +92813,7 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/Common\/Service\/AmaniService_ApiV2.swift",
       "kind": "StringLiteral",
-      "offset": 20315,
+      "offset": 23156,
       "length": 8,
       "value": "\"Bearer\""
     },
@@ -90199,135 +93443,128 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 3657,
+      "offset": 3703,
       "length": 21,
       "value": "\"previewLayer failed\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 3750,
+      "offset": 3796,
       "length": 13,
       "value": "\"rect failed\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 3850,
+      "offset": 3896,
       "length": 21,
       "value": "\"sampleBuffer failed\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 3993,
+      "offset": 4039,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 4097,
+      "offset": 4143,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 4201,
+      "offset": 4247,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 4265,
+      "offset": 4311,
       "length": 30,
       "value": "\"unable to get leftFace point\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 4377,
+      "offset": 4423,
       "length": 31,
       "value": "\"unable to get rightFace point\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 4488,
+      "offset": 4534,
       "length": 30,
       "value": "\"unable to get noseroot point\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 4607,
+      "offset": 4653,
       "length": 25,
       "value": "\"unable to get yaw value\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 4723,
+      "offset": 4769,
       "length": 26,
       "value": "\"unable to get roll value\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 5063,
+      "offset": 5109,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 5297,
+      "offset": 5343,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 5378,
+      "offset": 5424,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 5461,
+      "offset": 5507,
       "length": 7,
       "value": "-0.0040"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 5572,
+      "offset": 5618,
       "length": 3,
       "value": "2.2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 5676,
+      "offset": 5722,
       "length": 3,
       "value": "2.2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 5725,
+      "offset": 5771,
       "length": 7,
       "value": "-0.0040"
-    },
-    {
-      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5776,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
@@ -90339,245 +93576,294 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 6480,
+      "offset": 5868,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6526,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 6519,
+      "offset": 6565,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 6747,
+      "offset": 6793,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 6834,
+      "offset": 6880,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 6850,
+      "offset": 6896,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 7369,
+      "offset": 7415,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 7448,
+      "offset": 7494,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 7464,
+      "offset": 7510,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 7556,
+      "offset": 7602,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 7639,
+      "offset": 7685,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 7655,
+      "offset": 7701,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 7846,
+      "offset": 7892,
       "length": 22,
       "value": "\"cvImageBuffer failed\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 8129,
+      "offset": 8175,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "Dictionary",
-      "offset": 9211,
+      "offset": 9257,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 9301,
+      "offset": 9347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 9307,
+      "offset": 9353,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 9435,
+      "offset": 9481,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 9587,
+      "offset": 9633,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 9610,
+      "offset": 9656,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 9706,
+      "offset": 9752,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "Array",
-      "offset": 9741,
+      "offset": 9787,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 9775,
+      "offset": 9821,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 9840,
+      "offset": 9886,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 10062,
+      "offset": 10108,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10539,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10616,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10932,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11017,
+      "length": 3,
+      "value": "160"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11184,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11264,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 10495,
+      "offset": 11421,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "StringLiteral",
-      "offset": 10577,
+      "offset": 11499,
       "length": 17,
       "value": "\"ciImage2 failed\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 10780,
+      "offset": 11686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 10866,
+      "offset": 11768,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "IntegerLiteral",
-      "offset": 10992,
+      "offset": 11970,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "FloatLiteral",
-      "offset": 11026,
+      "offset": 12004,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "Array",
-      "offset": 11065,
+      "offset": 12043,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 11125,
+      "offset": 12103,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 11613,
+      "offset": 12591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 11731,
+      "offset": 12709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/PoseEstimationModule\/Helpers\/FaceLandmarks.swift",
       "kind": "BooleanLiteral",
-      "offset": 11844,
+      "offset": 12822,
       "length": 5,
       "value": "false"
     },
@@ -92250,58 +95536,65 @@
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1386,
+      "offset": 1482,
       "length": 16,
       "value": "\"id_card_number\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1420,
+      "offset": 1516,
       "length": 8,
       "value": "\"access\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1453,
+      "offset": 1549,
       "length": 9,
       "value": "\"refresh\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1484,
+      "offset": 1580,
       "length": 12,
       "value": "\"company_id\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1521,
+      "offset": 1617,
       "length": 15,
       "value": "\"missing_rules\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1558,
+      "offset": 1654,
       "length": 12,
       "value": "\"aml_status\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1596,
+      "offset": 1692,
       "length": 16,
       "value": "\"email_verified\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 1638,
+      "offset": 1734,
       "length": 16,
       "value": "\"phone_verified\""
+    },
+    {
+      "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerResponseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1778,
+      "length": 16,
+      "value": "\"biopay_enabled\""
     },
     {
       "filePath": "\/Users\/yyerdogmus\/Documents\/GitHub\/IOS_SDK_V2\/AmaniSDK\/AppModules\/Models\/ModelBridge\/CustomerDetailModel.swift",

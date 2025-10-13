@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AmaniSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AmaniSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import Accelerate
 import CommonCrypto
@@ -29,6 +29,10 @@ import _Concurrency
 import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct BioMatchPinResult : Swift.Decodable {
+  public let status: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct NFCRequest : Swift.Codable {
   public var mrz: Swift.String
   public var photo: AmaniSDK.Photo
@@ -264,6 +268,7 @@ public struct ApiV1_AddressInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public typealias PinCompletion<T> = (Swift.Result<T, AmaniSDK.AmaniError>) -> Swift.Void
 @_hasMissingDesignatedInitializers public class CustomerInfo {
   public static let sharedInstance: AmaniSDK.CustomerInfo
   public func setInfo(occupation: Swift.String?, address: AmaniSDK.AddressInfo)
@@ -272,11 +277,13 @@ public struct ApiV1_AddressInfo : Swift.Codable {
   public func setEmail(email: Swift.String)
   public func setPhone(phone: Swift.String)
   public func getCustomer() -> AmaniSDK.CustomerResponseModel
+  public func enablePin(_ pin: Swift.String, completion: @escaping AmaniSDK.PinCompletion<AmaniSDK.BioMatchPinResult>)
+  public func disablePin(completion: @escaping AmaniSDK.PinCompletion<AmaniSDK.BioMatchPinResult>)
   public func getCustomer(forceUpdateCallback: ((_ success: AmaniSDK.CustomerResponseModel?) -> Swift.Void)?)
-  public func requestEmailOTPCode(result: @escaping (Swift.Bool?) -> Swift.Void)
-  public func requestPhoneOTPCode(result: @escaping (Swift.Bool?) -> Swift.Void)
-  public func submitEmailOTP(code: Swift.String, completion: @escaping (Swift.Bool?) -> Swift.Void)
-  public func submitPhoneOTP(code: Swift.String, completion: @escaping (Swift.Bool?) -> Swift.Void)
+  public func requestEmailOTPCode(result: @escaping ((Swift.Bool?) -> Swift.Void))
+  public func requestPhoneOTPCode(result: @escaping ((Swift.Bool?) -> Swift.Void))
+  public func submitEmailOTP(code: Swift.String, completion: @escaping ((Swift.Bool?) -> Swift.Void))
+  public func submitPhoneOTP(code: Swift.String, completion: @escaping ((Swift.Bool?) -> Swift.Void))
   public func upload(location: CoreLocation.CLLocation?, completion: @escaping (Swift.Bool?) -> Swift.Void)
   @objc deinit
 }
@@ -737,6 +744,7 @@ public struct ApiV2_CustomerResponseModel : Swift.Codable {
   public var refreshToken: Swift.String?
   public var emailVerified: Swift.Bool?
   public var phoneVerified: Swift.Bool?
+  public var bioMatchEnabled: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1217,6 +1225,17 @@ public class PACEHandler {
   @objc deinit
 }
 public struct MrzModel : Swift.Codable {
+  public var value: Swift.String?, mrzFullName: Swift.String?, mrzidNumber: Swift.String?
+  public var mrzDocumentNumber: Swift.String, mrzDocumentNumberCD: Swift.String, mrzBirthDate: Swift.String, mrzBirthDateCD: Swift.String, mrzExpiryDate: Swift.String, mrzExpiryDateCD: Swift.String
+  public var mrzidNumberCD: Swift.String?
+  public var mrzFirstName: Swift.String?, mrzLastName: Swift.String?, mrzSex: Swift.String?, mrzType: Swift.String?
+  public var mrzCountryCode: Swift.String?, mrzNationality: Swift.String?
+  public var mrzOptionalData: Swift.String?
+  public var mrzOverallCD: Swift.String?
+  public var confidence: Swift.Int?, x: Swift.Int?, y: Swift.Int?, w: Swift.Int?
+  public var h: Swift.Int?
+  public var roi: Swift.String?
+  public var letterHeight: Swift.Int?, letterSpacing: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1239,8 +1258,8 @@ public enum ProfileStatus : Swift.String, Swift.Codable {
   }
 }
 @_hasMissingDesignatedInitializers public class Signature {
-  public typealias VoidFnCallback = () -> ()
-  public typealias OnConfirmPressed = (UIKit.UIImage, Swift.Int) -> ()
+  public typealias VoidFnCallback = (() -> ())
+  public typealias OnConfirmPressed = ((UIKit.UIImage, Swift.Int) -> ())
   public static let sharedInstance: AmaniSDK.Signature
   public func getCountofSignatures() -> Swift.Int
   public func setViewArea(viewArea: CoreFoundation.CGRect)
@@ -1273,7 +1292,7 @@ public struct ApiV2_CustomerRequestModel : Swift.Codable {
 @_hasMissingDesignatedInitializers public class Questionnaire {
   public static let sharedInstance: AmaniSDK.Questionnaire
   public func getQuestions(completion: @escaping ([AmaniSDK.QuestionModel]) -> Swift.Void)
-  public func submitAnswers(answers: [AmaniSDK.QuestionAnswerRequestModel], completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func submitAnswers(answers: [AmaniSDK.QuestionAnswerRequestModel], completion: @escaping ((Swift.Bool) -> Swift.Void))
   @objc deinit
 }
 @available(iOS 13, macOS 10.15, *)
@@ -1571,7 +1590,7 @@ public class PoseEstimation {
   @discardableResult
   public func setOnFailedAttemptCallback(callback: @escaping (Swift.Int) -> Swift.Void) -> AmaniSDK.PoseEstimation
   public func start(stepId: Swift.Int = steps.front.rawValue, completion: @escaping (UIKit.UIImage) -> Swift.Void) throws -> UIKit.UIView?
-  public func upload(location: CoreLocation.CLLocation? = nil, completion: @escaping (Swift.Bool?) -> Swift.Void)
+  public func upload(location: CoreLocation.CLLocation? = nil, completion: @escaping ((Swift.Bool?) -> Swift.Void))
   @objc deinit
 }
 public enum PACEMappingType {
@@ -1752,7 +1771,7 @@ public class IDCapture {
   public func setClientSideMRZ(enabled: Swift.Bool) -> AmaniSDK.IDCapture
   public func start(stepId: Swift.Int = steps.front.rawValue, completion: @escaping (UIKit.UIImage) -> Swift.Void) throws -> UIKit.UIView?
   public func upload(location: CoreLocation.CLLocation? = nil, completion: @escaping (Swift.Bool?) -> Swift.Void)
-  public func getMrz(cb: @escaping (Swift.String?) -> Swift.Void)
+  public func getMrz(cb: @escaping ((Swift.String?) -> Swift.Void))
   @available(iOS 13, *)
   public func startNFC(nvi: AmaniSDK.NviModel) async -> Swift.Bool
   @available(iOS 13, *)
@@ -1825,6 +1844,7 @@ public struct CustomerResponseModel : Swift.Codable {
   public var refreshToken: Swift.String?
   public var emailVerified: Swift.Bool?
   public var phoneVerified: Swift.Bool?
+  public var bioMatchEnabled: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
